@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0b0b0b;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 6%;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 14px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-book {
+  color: #00c2ff;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 6%;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("photo-1594051673969-172a6f721d3c.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+/* BUTTON */
+.btn {
+  background: #00c2ff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* SECTION */
+.section {
+  padding: 70px 6%;
+  text-align: center;
+}
+
+.dark {
+  background: #111;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card, .price-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+/* PRICE */
+.price {
+  color: #00c2ff;
+  font-size: 1.5rem;
+}
+
+/* INSTAGRAM */
+.insta-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #E1306C;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.instagram-widget {
+  margin-top: 40px;
+}
+
+.instagram-widget iframe {
+  width: 100%;
+  min-height: 500px;
+  border-radius: 12px;
+}
+
+/* CTA */
+.cta {
+  padding: 60px;
+  background: linear-gradient(135deg,#00c2ff,#006eff);
+}
+
+/* FORM */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* FLOAT BUTTONS */
+.floating-book {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00c2ff;
+  padding: 15px;
+  border-radius: 50px;
+  color: black;
+  text-decoration: none;
+}
+
+.floating-text {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50px;
+  color: white;
+}
