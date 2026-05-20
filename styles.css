@@ -40,12 +40,15 @@ html {
   display: flex;
   align-items: center;
   padding: 0 6%;
+
   background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("photo-1594051673969-172a6f721d3c.jpg"); /* your image */
+    url("./photo-1594051673969-172a6f721d3c.jpg");
+
   background-size: cover;
   background-position: center;
 }
+
 
 .btn {
   background: #00c2ff;
