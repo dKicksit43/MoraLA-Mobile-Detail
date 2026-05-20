@@ -119,10 +119,38 @@ html {
   border-radius: 12px;
 }
 
-/* CTA */
+
+/* CTA GRID */
 .cta {
-  padding: 60px;
+  padding: 60px 6%;
   background: linear-gradient(135deg,#00c2ff,#006eff);
+}
+
+/* 2 columns */
+.cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* each column */
+.cta-box {
+  text-align: center;
+}
+
+/* slightly different button for text */
+.btn.secondary {
+  background: black;
+  color: white;
+}
+
+/* MOBILE FIX */
+@media (max-width: 700px) {
+  .cta-grid {
+    grid-template-columns: 1fr
+
 }
 
 /* FORM */
