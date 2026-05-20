@@ -19,10 +19,6 @@ html {
   padding: 12px 6%;
 }
 
-.logo {
-  font-weight: bold;
-}
-
 .nav-links {
   display: flex;
   gap: 14px;
@@ -45,28 +41,15 @@ html {
   display: flex;
   align-items: center;
   padding: 0 6%;
-
-  background:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("photo-1594051673969-172a6f721d3c.jpg");
-
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
 }
 
-.hero h1 {
-  font-size: 2rem;
-}
-
-/* BUTTON */
 .btn {
   background: #00c2ff;
   padding: 12px 24px;
   border-radius: 30px;
   color: black;
   text-decoration: none;
-  display: inline-block;
-  margin-top: 20px;
 }
 
 /* SECTION */
@@ -92,23 +75,7 @@ html {
   border-radius: 15px;
 }
 
-/* PRICE */
-.price {
-  color: #00c2ff;
-  font-size: 1.5rem;
-}
-
 /* INSTAGRAM */
-.insta-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #E1306C;
-  border-radius: 30px;
-  color: white;
-  text-decoration: none;
-}
-
 .instagram-widget {
   margin-top: 40px;
 }
@@ -116,56 +83,38 @@ html {
 .instagram-widget iframe {
   width: 100%;
   min-height: 500px;
-  border-radius: 12px;
 }
 
-
-/* CTA GRID */
+/* CTA */
 .cta {
-  padding: 60px 6%;
+  padding: 80px 6%;
   background: linear-gradient(135deg,#00c2ff,#006eff);
 }
 
-/* 2 columns */
-.cta-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+.cta-container {
   max-width: 900px;
   margin: auto;
 }
 
-/* each column */
-.cta-box {
+.cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
   text-align: center;
+  gap: 40px;
 }
 
-/* slightly different button for text */
-.btn.secondary {
+.cta-subtext {
+  margin-bottom: 20px;
+}
+
+.dark-btn {
   background: black;
   color: white;
-}
-
-/* MOBILE FIX */
-@media (max-width: 700px) {
-  .cta-grid {
-    grid-template-columns: 1fr
-
-}
-
-/* FORM */
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin: auto;
-}
-
-input, textarea {
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
 /* FLOAT BUTTONS */
@@ -182,10 +131,18 @@ input, textarea {
 
 .floating-text {
   position: fixed;
-  bottom: 80px;
   right: 20px;
+  bottom: 70px;
   background: #25D366;
   padding: 15px;
   border-radius: 50px;
   color: white;
+  text-decoration: none;
+}
+
+/* MOBILE */
+@media (max-width:700px){
+  .cta-grid {
+    grid-template-columns: 1fr;
+  }
 }
