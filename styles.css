@@ -27,7 +27,6 @@ html {
 .nav-links a {
   color: #ccc;
   text-decoration: none;
-  font-size: 0.9rem;
 }
 
 .nav-book {
@@ -41,14 +40,11 @@ html {
   display: flex;
   align-items: center;
   padding: 0 6%;
-
   background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("jnp.jpg");
-
+    url("jnp.jpg"); /* your image */
   background-size: cover;
   background-position: center;
-
 }
 
 .btn {
@@ -59,7 +55,7 @@ html {
   text-decoration: none;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section {
   padding: 70px 6%;
   text-align: center;
@@ -80,6 +76,10 @@ html {
   background: #1a1a1a;
   padding: 25px;
   border-radius: 15px;
+}
+
+.price {
+  color: #00c2ff;
 }
 
 /* INSTAGRAM */
@@ -108,12 +108,8 @@ html {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
-  text-align: center;
   gap: 40px;
-}
-
-.cta-subtext {
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 .dark-btn {
@@ -124,26 +120,30 @@ html {
   text-decoration: none;
 }
 
-/* FLOAT BUTTONS */
+.cta-subtext {
+  margin-bottom: 15px;
+}
+
+/* FLOATING BUTTONS */
+.floating-text {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
 .floating-book {
   position: fixed;
   bottom: 20px;
   right: 20px;
   background: #00c2ff;
-  padding: 15px;
-  border-radius: 50px;
   color: black;
-  text-decoration: none;
-}
-
-.floating-text {
-  position: fixed;
-  right: 20px;
-  bottom: 70px;
-  background: #25D366;
   padding: 15px;
   border-radius: 50px;
-  color: white;
   text-decoration: none;
 }
 
